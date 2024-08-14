@@ -1,0 +1,285 @@
+/* General Layout */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #e9ecef; /* Light background for better contrast */
+  overflow: hidden; /* Prevent scrolling issues */
+}
+
+/* Admin Navigation */
+.admin-nav {
+  width: 250px;
+  background-color: #343a40;
+  padding: 20px;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.admin-nav h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.admin-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-nav li {
+  margin-bottom: 10px;
+}
+
+.admin-nav li a {
+  display: block;
+  padding: 10px 15px; /* Standard padding */
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px; /* Standard font size */
+}
+
+.admin-nav li a:hover {
+  background-color: #495057; /* Darker background on hover */
+}
+
+.admin-nav li a.active {
+  background-color: #007bff; /* Highlight active link */
+  color: #fff;
+}
+
+.admin-nav .icon {
+  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 18px; /* Standard icon size */
+}
+
+.admin-main {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px;
+  overflow-y: auto; /* Ensure content is scrollable */
+}
+
+.admin-main h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #343a40;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Increase gap for better spacing */
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.stat {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+  flex-direction: column;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow transition */
+}
+
+.stat:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deep shadow on hover */
+}
+
+.stat .icon {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.stat h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #343a40;
+}
+
+.stat p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #007bff;
+}
+
+/* Weather Column */
+.weather-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image, Weather, and Chart Section */
+.image-weather-chart-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: calc(100% - 250px);
+  margin-left: 250px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 500px;
+}
+
+.dashboard-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 12px;
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.dashboard-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.chart-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.chart-container {
+  width: 800px;
+  height: 450px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.pie-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.labels-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 45%;
+  max-width: 250px;
+}
+
+.label-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.label-color-box {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.label-text {
+  font-size: 16px;
+}
+
+/* Sales Report Section */
+.sales-report-section {
+  width: calc(100% - 270px); /* Adjust width */
+  margin-right: 100px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sales-report-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.sales-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Ensure sales items are centered within the grid */
+.sales-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow transition */
+}
+
+.sales-item:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deep shadow on hover */
+}
+
+.sales-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #343a40;
+}
+
+.sales-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #007bff;
+}
+
+/* Profit Graph Section */
+.profit-graph-section {
+  width: calc(100% - 270px);
+  margin-left: 100px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  height: 600px; /* Increase height */
+}
+
+.monthly-profits-graph {
+  width: 100%;
+  max-width: 1200px; /* Ensure responsiveness */
+  height: 500px; /* Increased height for better visibility */
+  padding: 20px;
+}

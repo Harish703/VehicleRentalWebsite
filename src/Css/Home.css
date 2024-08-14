@@ -1,0 +1,356 @@
+/* General Styles */
+.home-container {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Carousel Section */
+.carousel-section {
+  display: flex;
+  justify-content: center; /* Centers the carousel items horizontally */
+  align-items: center; /* Centers the carousel items vertically */
+  margin: 20px auto;
+  max-width: 1000px;
+  height: 500px; /* Adjust this to give space on top and bottom */
+  padding: 0;
+  overflow: hidden; /* Prevents any overflow */
+}
+
+.carousel-custom .carousel-item {
+  position: relative;
+  margin: 0 10px; /* Space between carousel items */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-custom .carousel-item img {
+  height: 180px; /* Compact height */
+  width: 180px; /* Compact width */
+  object-fit: cover;
+  border-radius: 8px; /* Optional: Adds rounded corners to the images */
+}
+
+.carousel-custom .carousel-caption {
+  position: absolute; /* Position the caption inside the image */
+  bottom: 0; /* Align the caption to the bottom of the image */
+  left: 0;
+  width: 100%; /* Ensure the caption spans the full width of the image */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: #fff; /* White text color for contrast */
+  padding: 5px;
+  box-sizing: border-box; /* Ensures padding does not affect the caption's width */
+  text-align: center; /* Center the text inside the caption */
+  border-bottom-left-radius: 8px; /* Matches the rounded corners of the image */
+  border-bottom-right-radius: 8px; /* Matches the rounded corners of the image */
+}
+
+.carousel-custom .carousel-caption h3 {
+  font-size: 12px; /* Adjust the font size for compact design */
+  font-weight: bold;
+  margin: 0; /* Remove any default margin */
+}
+
+.carousel-custom .carousel-caption p {
+  font-size: 10px; /* Smaller font size for a compact look */
+  margin: 2px 0 0; /* Adjust margin to create space between the title and description */
+}
+
+/* Subscription Info Section */
+.subscription-info {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333A73;
+}
+
+.subscription-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.subscription-info p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Features Grid */
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.feature-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 180px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-box img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  color: #333A73;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Section */
+.blog-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between blog items as needed */
+  justify-content: center; /* Center-aligns the blog items */
+}
+
+.blog-item {
+  flex: 1 1 calc(33.333% - 20px); /* Each item takes up roughly one-third of the container width minus the gap */
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.blog-item img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-item h3 {
+  margin: 10px 0;
+}
+
+.blog-item p {
+  padding: 0 10px;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+  gap: 20px; /* Space between columns */
+  justify-content: center; /* Center the grid items */
+}
+
+.step {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-number {
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; /* Larger font size for numbers */
+  margin: 0 auto 10px; /* Center-align the step number and add space below */
+}
+
+.step-content {
+  font-size: 1rem; /* Adjust font size for readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 20px 10px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+
+  .step-number {
+    width: 50px; /* Smaller size for smaller screens */
+    height: 50px; /* Smaller size for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #cfcee7;
+  gap: 20px;
+}
+
+.faq-image {
+  flex: 2;
+  max-width: 40%;
+}
+
+.faq-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.faq-questions {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-questions h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq-question {
+  background-color: #e7f9af;
+  border: 1px solid #e7f9af;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.view-all {
+  align-self: center;
+  background-color: #fba834;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.view-all:hover {
+  background-color: #333a73;
+}
+
+/* Social Media Section */
+.social-media-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.social-media-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+}
+
+.social-media-icon {
+  width: 40px; /* Size of the icons */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333a73;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px; /* Size of the icon */
+  transition: background-color 0.3s ease;
+}
+
+.social-media-icon:hover {
+  background-color: #fba834;
+}
+
+/* Footer */
+.footer {
+  background-color: #333a73;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}

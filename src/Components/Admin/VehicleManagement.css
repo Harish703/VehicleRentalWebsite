@@ -1,0 +1,158 @@
+/* Vehicle Management Styles */
+.vehicle-management-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* Ensure the container fits more content */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.form-container {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.save-button {
+  background-color: #387ADF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #333A73;
+  transform: scale(1.05);
+}
+
+.vehicle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vehicle-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vehicle-card {
+  flex: 1 1 calc(50% - 20px); /* Increase the width of the card */
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  max-height: 500px; /* Increase the height of the card */
+}
+
+.vehicle-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-image {
+  width: 100%; /* Make the image width full */
+  height: 200px; /* Increase the height of the image */
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.vehicle-details {
+  padding: 20px; /* Increase padding to fit more content */
+  background: #f9f9f9;
+}
+
+.vehicle-details h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.25rem; /* Increase font size for better readability */
+}
+
+.vehicle-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.edit-button,
+.delete-button {
+  background: #387ADF;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #333A73;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.edit-form {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.edit-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.save-changes-button {
+  background-color: #387ADF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin-top: 20px;
+}
+
+.save-changes-button:hover {
+  background-color: #333A73;
+  transform: scale(1.05);
+}

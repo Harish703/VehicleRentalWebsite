@@ -1,0 +1,58 @@
+.navbar {
+  background-color: #333A73; /* Dark blue background for the navbar */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 28px; /* Larger font size for the title */
+  font-weight: bold;
+  color: #FBA834; /* Golden color for the title */
+  text-transform: uppercase; /* Uppercase for the title */
+  letter-spacing: 2px; /* Slightly spaced letters for effect */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.logo-link {
+  color: inherit; /* Inherit color from the navbar-logo class */
+  text-decoration: none; /* Remove underline */
+}
+
+.logo-link:hover {
+  color: #50C4ED; /* Change color on hover */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FBA834; /* Highlight color on hover */
+}
+
+.login-link {
+  display: flex;
+  align-items: center;
+}
+
+.login-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}

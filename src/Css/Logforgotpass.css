@@ -1,0 +1,83 @@
+/* ForgotPassword.css */
+.forgot-password-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+  }
+  
+  .forgot-password-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .forgot-password-container h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #333A73;
+  }
+  
+  .forgot-password-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .forgot-password-container .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333A73;
+  }
+  
+  .forgot-password-container input {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .forgot-password-button {
+    background-color: #333A73;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .forgot-password-button:hover {
+    background-color: #fba834;
+    transform: scale(1.05);
+  }
+  
+  .back-to-signin {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .back-to-signin a {
+    color: #387ADF;
+    text-decoration: none;
+  }
+  
+  .back-to-signin a:hover {
+    color: #333A73;
+  }
+  
